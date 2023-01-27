@@ -9,7 +9,7 @@ class PageLocators:
     SEARCH_RESULT_HEADER = (By.XPATH, "//h1[@class='category__header']")
     RANDOM_PRODUCT_LINK = (By.XPATH, f"(//span[@class='product-card__title'])[{randint(1, 6)}]")
     EXPECTED_PRODUCT_NAME_PRODUCT_PAGE = (By.ID, "product-description")
-    EXPECTED_PRODUCT_PRICE_PRODUCT_PAGE = (By.XPATH, "//div[@class='price price__discount']")
+    EXPECTED_PRODUCT_PRICE_PRODUCT_PAGE = (By.XPATH, "(//span[@class='price__original'])[2]")
     ADD_TO_CART = (By.XPATH, "//button[@data-add-to-cart-id]")
     GO_TO_CART_BUTTON = (By.XPATH, "//a[@class='button w-100']")
     ACTUAL_PRODUCT_NAME_CART = (By.XPATH, "//a[@class='cart-item__title']")

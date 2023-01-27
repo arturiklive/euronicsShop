@@ -20,9 +20,9 @@ class TestShopPage:
         listing_page.click_random_product()
 
         product_page = ProductPage(driver)
-        #expected_name = product_page.get_expected_product_name()
+        expected_name = product_page.get_expected_product_name()
         expected_price = product_page.get_expected_product_price()
-        #print(expected_name)
+        print(expected_name)
         print(expected_price)
         product_page.add_to_cart()
         product_page.go_to_cart()

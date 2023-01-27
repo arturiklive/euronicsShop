@@ -7,10 +7,10 @@ class ProductPage(BasePage):
         self.driver = driver
 
     def get_expected_product_name(self):
-        return self.element_is_visible(Locators.EXPECTED_PRODUCT_NAME_PRODUCT_PAGE)
+        return self.element_is_visible(Locators.EXPECTED_PRODUCT_NAME_PRODUCT_PAGE).text
 
     def get_expected_product_price(self):
-        return self.element_is_visible(Locators.EXPECTED_PRODUCT_PRICE_PRODUCT_PAGE).get_attribute('textContent')
+        return self.element_is_visible(Locators.EXPECTED_PRODUCT_PRICE_PRODUCT_PAGE).text
 
     def add_to_cart(self):
         self.element_is_visible(Locators.ADD_TO_CART).click()
