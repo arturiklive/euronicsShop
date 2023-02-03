@@ -12,7 +12,7 @@ class PageLocators:
     EXPECTED_PRODUCT_PRICE_PRODUCT_PAGE = (By.XPATH, "(//span[@class='price__original'])[2]")
     ADD_TO_CART = (By.XPATH, "//button[@data-add-to-cart-id]")
     GO_TO_CART_BUTTON = (By.XPATH, "//a[@class='button w-100']")
-    ACTUAL_PRODUCT_NAME_CART = (By.XPATH, "//a[@class='cart-item__title']")
-    ACTUAL_PRODUCT_PRICE_CART = (By.XPATH, "//span[@class='total-sum']/following-sibling::span")
+    ACTUAL_PRODUCT_NAME_CART = "//a[@class='cart-item__title']"
+    ACTUAL_PRODUCT_PRICE_CART = "//p[@class='price__em ']"
     DELETE_PRODUCT_FROM_CART = (By.XPATH, "//button[@class='button button--ghost remove-item']")
     CHECK_IF_PRODUCT_DELETED = (By.XPATH, "//span[@class='noproducts']")

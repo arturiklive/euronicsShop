@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from locators.page_locators import PageLocators as Locators
 
+
 class ListingPage(BasePage):
     def __init__(self, driver):
         self.driver = driver
